@@ -9,6 +9,34 @@ body {
   border: 0;
 }
 
+.modal {
+    
+    position: fixed;
+    border: 1px dotted rgb(199, 15, 70);
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #f6416c 10%, #fff6b7 100%);
+    color:  rgb(199, 15, 70);
+    top: -500px;
+    left: 40%;
+
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+
+    opacity: 1;
+
+    text-align: center;
+    line-height: 175px;
+  
+    z-index: 1;
+    transform: translate (-50% - 50%);
+    transition: all 0.35s;
+}
+
+.modal2 {
+  top: 50%;
+} 
+
 h4 {
   margin: 10px 0 0;
   padding: 0;
@@ -173,3 +201,4 @@ strong {
 .product p {
   align-self: flex-end;
 }
+
