@@ -26,8 +26,8 @@ function createProduct(parent, imgUrl, productTitle, textPrice, idProduct) {
       modal.classList.toggle("modal2");
     }, 2000)
 
-   
-  
+
+
     // Nel caso in cui volessimo aggiungere una interazione col LocalStorage
     localStorage.setItem("totCartitems", cartList.length);
   });
@@ -108,18 +108,59 @@ clearCartBtn.addEventListener("click", () => {
 //slideshow
 
 function slideshow() {
-setTimeout(() => {
-document.querySelector(".overlay").className = "overlay2";
+  setTimeout(() => {
+    document.querySelector(".overlay").className = "overlay2";
 
-setTimeout(() => {
-  document.querySelector(".overlay2").className = "overlay3";
+    setTimeout(() => {
+      document.querySelector(".overlay2").className = "overlay3";
 
-setTimeout(() => {
-    document.querySelector(".overlay3").className = "overlay";
-   
-  }, 3000); }, 3000); }, 3000);
- 
+      setTimeout(() => {
+        document.querySelector(".overlay3").className = "overlay";
+
+      }, 3000);
+    }, 3000);
+  }, 3000);
+
 }
 
-window.onload = setInterval(function(){slideshow();}, 9000);
+window.onload = setInterval(function () {
+  slideshow();
+}, 9000);
 
+// Review Section 
+
+const reviews = [{
+    Name: "Priscilla P.",
+    rate: "🌟4/5",
+    Comment: "Amo questo sito, trovo tutto ciò di cui ho bisogno, dai vestiti all'elettronica!",
+  },
+
+  {
+    Name: "Elizabeth M.",
+    rate: "🌟5/5",
+    Comment: "Il miglior e-commerce di sempre",
+  },
+
+  {
+    Name: "Mary R.",
+    rate: "🌟5/5",
+    Comment: "Il mio sito preferito, compro tutto qui!",
+  }
+]
+
+let counter = 0;
+
+function reviewsSlider() {
+  if (counter > 2) counter = 0;
+  document.getElementById("boxReviews").firstElementChild.innerHTML =
+    reviews[counter].Name;
+  document.getElementById("boxReviewsComment").firstElementChild.innerHTML =
+    reviews[counter].Comment;
+  document.getElementById("boxReviewsRate").firstElementChild.innerHTML =
+    reviews[counter].rate;
+
+  counter++;
+
+  setTimeout(reviewsSlider, 3000);
+}
+reviewsSlider();
