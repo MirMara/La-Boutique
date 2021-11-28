@@ -5,7 +5,7 @@
 ![This is an image](https://media.istockphoto.com/photos/woman-doing-online-shopping-picture-id1029343372?s=612x612)
 
 
-### Technologies used to creaet this e-commerce project: 🖥️ ###  
+### I created this e-commerce project by using: 🖥️ ###  
 - HTML;
 - CSS;
 - Javascript;
@@ -13,4 +13,4 @@
 
   ### If you want to have a look at our wonderful website, please 🖱️ ### 
 
-[click here](mirmara.github.io/la-boutique/)
+[click here](https://mirmara.github.io/la-boutique/)
