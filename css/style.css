@@ -168,7 +168,13 @@ strong {
   font-size: 0.9rem;
 }
 
-.showCartBtn {
+.inputFilterSearch,
+.labelFilterSearch {
+  width: 150px;
+  align-self: center;
+}
+
+.showCartBtn, .searchBtn {
   margin: 20px 0;
   padding: 10px 5px;
   width: 150px;
@@ -181,7 +187,7 @@ strong {
   cursor: pointer;
 }
 
-.showCartBtn:hover {
+.showCartBtn:hover, .searchBtn:hover {
   background-color: lightpink;
 }
 
@@ -253,4 +259,9 @@ section {
 
 .sideViewAnim {
   transform: translateX(120%);
+  }
+
+
+  .searchAnim {
+    opacity: 0;
   }
